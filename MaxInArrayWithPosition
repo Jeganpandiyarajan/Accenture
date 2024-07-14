@@ -1,0 +1,25 @@
+public class Main
+{
+    static void fun(int arr[]){
+        int max=0,pos=0;
+        for(int i=0;i<arr.length-1;i++){
+            pos=0;
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[i]>arr[j]){
+                    max=arr[i];
+                    pos=i;
+                }
+                else{
+                    max=arr[j];
+                    pos=j;
+                }
+            }
+            
+        }
+        System.out.print(max+" "+pos);
+    }
+	public static void main(String[] args) {
+		int arr[]={23 ,45, 82, 27, 66, 12, 78, 13, 71, 86,34,23,67,80,12223,55555555};
+		fun(arr);
+	}
+}
