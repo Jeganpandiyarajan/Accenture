@@ -1,0 +1,24 @@
+public class Main
+{
+    static int hii(int num1,int num2){
+        int sum=0;
+        for(int i=num1;i<=num2;i++){
+            if(i%3==0 && i%5==0){
+                sum=sum+i;
+            }
+        }
+        return sum;
+    }
+	public static void main(String[] args) {
+		int num1=12;
+		int num2=50;
+		
+		int num3=100;
+		int num4=160;
+		
+		int res=hii(num1,num2);
+		int res1=hii(num3,num4);
+		
+		System.out.print(res1);
+	}
+}
